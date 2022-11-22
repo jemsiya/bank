@@ -1,0 +1,40 @@
+
+||||||||||ANGULAR||||||
+
+
+Basic building blocks
+
+1)module-to import 3rd party modules (root module-app.module.ts)
+2)Component -to create html,css and its files
+
+Basic commands
+
+1)to create new project -ng new project near_me
+2)to reate new component-ng g c component near_me
+3)to run angular files-ng serve --open
+
+Basic concept
+
+Data binding:
+
+share data btwn components
+
+ts->component
+html->view
+1) one way data binding:
+
+data sharing only onedirection(ts->html or html->ts)
+
+
+    1.1)component to view(ts->html)
+
+          a) String interpolaton - {{expression}}
+          b) Property binding -[attribute_name]="property"
+
+    1.2)view to component(html->ts)
+
+          a)Event binding -(event_name)="function_name()"
+          b)Event binduing using $event-(event_name)="function_name($event)"
+          c)Event binding using templete referencing variable #variablename
+2) two way data binding
+Data sharing both direction(ts->html html->ts)

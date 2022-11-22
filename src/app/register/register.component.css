@@ -1,0 +1,28 @@
+.bord{
+  border: 2px solid #ccc;
+  border-radius: 6px;
+
+}
+.nkn{
+  color: rgb(112, 142, 240);
+
+}
+.nk{
+  color: rgb(224, 216, 231);
+  border-radius: 3px;
+  border: 0px;
+  width: 100%;
+  box-shadow: 0 10px 5px rgba(155, 184, 240, 0.7);
+  border-radius: 10px;
+
+}
+#nn{
+  background-color: rgb(118, 158, 240);
+  color: rgb(5, 1, 8);
+  border-radius: 8px;
+  border: 0px;
+  width: 100%;
+}
+.nav{
+  float: right;
+}
