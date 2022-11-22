@@ -12,9 +12,9 @@
           <h1 class="mb-3 fs-3 text-center nkn">MYBANK</h1>
           <h6 class="mb-2 text-center">{{aim}}</h6>
           <form>
-         <input #acno type="text" id="acnum" [placeholder]="account"class="form-control mb-2 nk">
-         <input #pswd type="password" id="pswdd" placeholder="password"class="form-control nk">
-         <button id="nn"(click)="login(acno,pswd)"type="button" class="mt-4">login</button>
+         <input [(ngModel)]="acno" type="text" id="acnum" [placeholder]="account"class="form-control mb-2 nk">
+         <input [(ngModel)]="pswd" type="password" id="pswdd" placeholder="password"class="form-control nk">
+         <button id="nn"(click)="login()"type="button" class="mt-4">login</button>
       </form>
       <div class="text-center fs-8 mt-4">
           <a href="'#">Forget password?</a>or<a href="register.html">Sign up</a>

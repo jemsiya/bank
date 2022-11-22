@@ -37,4 +37,20 @@ data sharing only onedirection(ts->html or html->ts)
           b)Event binduing using $event-(event_name)="function_name($event)"
           c)Event binding using templete referencing variable #variablename
 2) two way data binding
-Data sharing both direction(ts->html html->ts)
+
+    Data sharing both direction(ts->html html->ts)
+       a)ngModel binding - import formsModule in app.module.ts
+       [(ngModel)]="property_name"
+
+  Angular Routing
+
+  To set path for component
+  {
+    path:value,component:component_name
+
+  }
+
+  login{
+    path:'',component;Logincomponent
+  }
+  

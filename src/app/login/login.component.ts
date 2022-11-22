@@ -35,42 +35,42 @@ userDetails:any={
     this.pswd=event.target.value;
     console.log(this.pswd);
    }
-  // login(){
-  //   // alert("login clicked");
-  //   var acno=this.acno;
-  //   var pswd=this.pswd;
-  //   var userDetails=this.userDetails;
+  login(){
+    // alert("login clicked");
+    var acno=this.acno;
+    var pswd=this.pswd;
+    var userDetails=this.userDetails;
 
-  //   if(acno in userDetails){
-  //     if(pswd==userDetails[acno]['password']){
-  //          alert('login successful')
-  //     }
-  //     else{
-  //       alert('invalid password')
-  //     }
-  //   }
-  //   else{
-  //     alert('invalid user')
-  //   }
-  // }
-
-//}
-login(a:any,p:any){
-  // alert("login clicked");
-  var acno=a.value;
-  var pswd=p.value;
-  var userDetails=this.userDetails;
-
-  if(acno in userDetails){
-    if(pswd==userDetails[acno]['password']){
-         alert('login successful')
+    if(acno in userDetails){
+      if(pswd==userDetails[acno]['password']){
+           alert('login successful')
+      }
+      else{
+        alert('invalid password')
+      }
     }
     else{
-      alert('invalid password')
+      alert('invalid user')
     }
   }
-  else{
-    alert('invalid user')
-  }
+
 }
-}
+// login(a:any,p:any){
+//   // alert("login clicked");
+//   var acno=a.value;
+//   var pswd=p.value;
+//   var userDetails=this.userDetails;
+
+//   if(acno in userDetails){
+//     if(pswd==userDetails[acno]['password']){
+//          alert('login successful')
+//     }
+//     else{
+//       alert('invalid password')
+//     }
+//   }
+//   else{
+//     alert('invalid user')
+//   }
+// }
+// }
