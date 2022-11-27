@@ -53,4 +53,16 @@ data sharing only onedirection(ts->html or html->ts)
   login{
     path:'',component;Logincomponent
   }
-  
+
+  3)angular services
+
+  to hold redundant data
+
+  to create new service - ng g s service_name
+
+
+  4)Dependency injection
+
+  to share data between two dependend classes
+
+   constructor(private ds:DataService)

@@ -1,1 +1,63 @@
-<p>dashbord works!</p>
+<div><h1>welcome {{user}}</h1>
+  <h2>.....</h2>
+<a routerLink="/transaction">transaction history</a>
+</div>
+<div class="parent">
+
+  <div class="child">
+    <div class="bg-light">
+
+      <div class="row bg-light">
+
+          <div class="col-4"></div>
+          <div class="col-6 m-5 p-5 bg-light bord">
+              <div align="center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-bank2 mb-3" viewBox="0 0 16 16">
+                      <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"/>
+                    </svg>
+              </div>
+              <div class="nkn"><h1 class="mb-3 fs-3 text-center">deposit</h1></div>
+              <form>
+
+             <input [(ngModel)]="acno" type="text" name="acno"id="depoacno" placeholder="account number"class="form-control mb-2 nk">
+             <input [(ngModel)]="pswd" type="password" name="password" id="depopswd" placeholder="password"class="form-control mb-2 nk">
+             <input [(ngModel)]="amount"type="text" name="username"id="deponame" placeholder="Amount"class="form-control mb-2 nk">
+             <button id="nn" (click)="deposit()"type="button" class=" mt-3">deposit</button>
+
+          </form>
+          <!-- <div class="text-center fs-8 mt-3"><a routerLink=''>Sign in</a></div> -->
+          </div>
+          <div class="col-4"></div>
+     </div>
+    </div>
+
+  </div>
+  <div class="child">
+    <div class="bg-light">
+
+      <div class="row bg-light">
+
+          <div class="col-4"></div>
+          <div class="col-6 m-5 p-5 bg-light bord">
+              <div align="center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" fill="currentColor" class="bi bi-bank2 mb-3" viewBox="0 0 16 16">
+                      <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"/>
+                    </svg>
+              </div>
+              <div class="nkn"><h1 class="mb-3 fs-3 text-center">Withdraw</h1></div>
+              <form>
+             <input [(ngModel)]="acno1" type="text" name="acno"id="withacno" placeholder="account number"class="form-control mb-2 nk">
+             <input [(ngModel)]="pswd1" type="password" name="password" id="withpswd" placeholder="password"class="form-control mb-2 nk">
+             <input [(ngModel)]="amount1"type="text" name="username"id="withname" placeholder="Amount"class="form-control mb-2 nk">
+
+             <button id="nnn" (click)="withdraw()"type="button" class=" mt-3">withdraw</button>
+
+          </form>
+          <!-- <div class="text-center fs-8 mt-3"><a routerLink=''>Sign in</a></div> -->
+          </div>
+          <div class="col-4"></div>
+     </div>
+    </div>
+
+  </div>
+</div>
