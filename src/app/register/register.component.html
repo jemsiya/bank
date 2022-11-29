@@ -24,8 +24,12 @@
           <div class="nkn"><h1 class="mb-3 fs-3 text-center">MY BANK</h1></div>
           <form [formGroup]="registerForm">
          <input formControlName="uname"type="text" name="username"id="rgname" placeholder="username"class="form-control mb-2 nk">
+         <div *ngIf="this.registerForm.get('uname')?.errors && this.registerForm.get('uname')?.touched" style="color: red;">Invalid username</div>
          <input formControlName="acno" type="text" name="acno"id="rgacno" placeholder="account number"class="form-control mb-2 nk">
+         <div *ngIf="this.registerForm.get('acno')?.errors && this.registerForm.get('acno')?.touched" style="color: red;">Invalid Account Number</div>
          <input formControlName="pswd" type="password" name="password" id="rgpswd" placeholder="password"class="form-control mb-2 nk">
+         <div *ngIf="this.registerForm.get('pswd')?.errors && this.registerForm.get('pswd')?.touched" style="color: red;">Invalid Password</div>
+
          <button id="nn" (click)="register()"type="button" class=" mt-3">register</button>
 
       </form>
