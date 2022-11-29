@@ -1,6 +1,7 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../servises/data.service';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -13,8 +14,14 @@ export class RegisterComponent implements OnInit {
    uname="";
 
 
-  constructor(private ds:DataService,private router:Router) { }
-
+  constructor(private fb:FormBuilder, private ds:DataService,private router:Router) { }
+   //registration model
+   registerForm=this.fb.group({
+    acno:[],
+    uname:[],
+    pswd:[]
+   })
+   //control pass to ts to html file
   ngOnInit(): void {
   }
 register(){

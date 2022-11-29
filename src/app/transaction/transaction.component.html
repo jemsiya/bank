@@ -3,18 +3,17 @@
 <table>
   <thead>
     <tr>
-      <th>type</th>
+      <th>Type</th>
       <th>amount</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>credit</td>
-      <td>1000</td>
+    <tr *ngFor="let t of transaction">
+      <td>{{t.Type}}</td>
+      <td>{{t.amount}}</td>
     </tr>
-    <tr>
-      <td>debit</td>
-      <td>1000</td>
-    </tr>
+
   </tbody>
 </table>
+
+<a routerLink="/dashbord">home</a>

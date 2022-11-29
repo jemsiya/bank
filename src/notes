@@ -66,3 +66,39 @@ data sharing only onedirection(ts->html or html->ts)
   to share data between two dependend classes
 
    constructor(private ds:DataService)
+
+  5)Angular directives to manupulate dom
+
+    a)component directives(array)
+
+    b)structural directives(table)
+
+        ->*ngFor
+
+
+    6)Angular Forms
+
+     a)Template driven Forms(first design html template)
+     b)Model driven Forms(first design model in ts file)
+
+         1)Reactive Forms
+
+           formgroup,array,control
+           for advanced validation
+           import from Reactive Forms Module(in app.module.ts)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

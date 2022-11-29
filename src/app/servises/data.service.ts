@@ -5,6 +5,9 @@ import { Injectable } from '@angular/core';
 })
 export class DataService {
   currentUser="";
+ //current account numbr
+
+ currentAcno="";
   constructor() { }
   //database
 userDetails:any={
@@ -35,6 +38,7 @@ let userDetails=this.userDetails;
 if(acno in userDetails){
   if(pswd==userDetails[acno]['password'])
   {this.currentUser=userDetails[acno]['username']
+  this.currentAcno=acno;
     return true;
 }
 else{
@@ -96,7 +100,9 @@ withdraw(acno:any,pswd:any,amt:any){
    return false;
  }
 }
-
+getTransaction(acno:any){
+  return this.userDetails[acno]['transaction']//details of transaction
+}
 }
 
 
