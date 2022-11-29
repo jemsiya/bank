@@ -25,10 +25,11 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   }
 register(){
+  console.log(this.registerForm);
   //alert(''register clicked)
-  var uname=this.uname;
-  var acno=this.acno;
-  var pswd=this.pswd;
+  var uname=this.registerForm.value.uname;
+  var acno=this.registerForm.value.acno;
+  var pswd=this.registerForm.value.pswd;
 
   const result=this.ds.register(acno,uname,pswd);
   if(result){
